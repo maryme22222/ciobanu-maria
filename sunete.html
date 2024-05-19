@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <title>Pagina cu Background Foto</title>
+    <style>
+        body {
+            font-family: "Teachers", sans-serif;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .background-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('sunet.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .background-link {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .text-container {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+        }
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 18px;
+            margin: 0;
+        }
+        .arrow {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            transform: rotate(-90deg);
+        }
+        .arrow img {
+            width: 40px; /* Ajustează dimensiunea imaginii săgeții */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="background-container">
+    <a href="sunet2.html" class="background-link"></a>
+    <div class="text-container">
+        <div>
+            <h1>Procesarea Informației Sonore</h1>
+            <p>Realizat: Ciobanu Maria</p>
+        </div>
+    </div>
+    <div class="arrow">
+        <img src="angle.svg" alt="Săgeată">
+    </div>
+</div>
+
+</body>
+</html>
